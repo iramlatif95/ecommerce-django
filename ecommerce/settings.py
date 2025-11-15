@@ -123,13 +123,13 @@ STATIC_URL = 'static/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # For development: emails will be printed in the console
-EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
 
 EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
-EMAIL_HOST_USER = 'iramlatif32@gmail.com'
-EMAIL_HOST_PASSWORD = 'cmbbwnfwkzdqtyuh'  # no spaces
+EMAIL_HOST_USER = 'craxysweeto27@gmail.com'
+EMAIL_HOST_PASSWORD = 'pxbz arxt tgxd xser'  
 DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
 
