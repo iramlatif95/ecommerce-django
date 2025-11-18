@@ -7,5 +7,5 @@ def notify_post_author(sender, instance, created, **kwargs):
     if created:
         post_author = instance.post.author
         commenter = instance.user
-        #print(f"{commenter.username} commented on your post: {instance.post.title}")
+        
         pass

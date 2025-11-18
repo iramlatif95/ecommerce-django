@@ -29,16 +29,16 @@ def login_user(request):
             password = form.cleaned_data.get('password')
             user = authenticate(request, username=username, password=password)
             if user is not None:
-                login(request, user)  # Creates session
-                return redirect('profile')  # Replace 'home' with your homepage URL name
+                login(request, user)  
+                return redirect('profile')  
     else:
         form = AuthenticationForm()
     
     return render(request, 'login_user.html',{'form':form})
 
-@login_required  # Ensures only logged-in users can access
+@login_required  
 def profile(request):
-    user = request.user  # Get the logged-in user
+    user = request.user 
     context = {
         'user': user
     }
@@ -51,7 +51,7 @@ def logout_user(request):
     if request.method == 'POST':
         logout(request)
         return redirect('login_user')
-    return redirect('signup')  # Prevent GET logout without POST
+    return redirect('signup')  
 
 
 
