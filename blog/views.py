@@ -1,6 +1,8 @@
 from django.shortcuts import render, get_object_or_404, redirect
 from .models import Post, Like
 from .forms import CommentForm
+from .models import Comment
+
 
 def post_list(request):
     posts = Post.objects.all().order_by('-created_at')
